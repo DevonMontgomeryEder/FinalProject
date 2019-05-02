@@ -2,43 +2,90 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link rel="stylesheet" href="../_css/projectStyle.css" type="text/css">
+  <meta charset="utf-8">
+  <title>My test page</title>
+  <link rel="stylesheet" href="_css/myStyle.css" type="text/css">
+  <!--all this stuff is bootsrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
 
 <body>
-    <script src="../_js/finalProject.js">
-        </script>
-    <div class="parallax1"></div>
-    <div style="height:750px; text-align:center;background-color: white;font-size:36px">
-        <!--Scroll Up and Down this page to see the parallax scrolling effect.
-            This div is just here to enable scrolling.
-            Tip: Try to remove the background-attachment property to remove the scrolling effect. -->
-        <div class="intro-background">
-            <div class="logo-text">
-                <img src="https:///www.genies.com/images/genies.svg" title="Delorean">
-            </div>
-            <h1>Building a more sustainable future</h1>
-        </div>
-        <div class="app-download">
-            <a href="https://www.google.com">
-                <img src="https://www.genies.com/images/app-store.svg" width="241.5" height="75"></a>
-            <a href="https://play.google.com/store/apps/details?id=la.blend.android&amp;hl=en_US">
-                <img src="https://www.genies.com/images/google-play.svg" width="241.5" height="75"></a>
-        </div>
-    </div>
+  <div class="container">
+    <div class="upbanner">
+      Banner
+      <div class="nav1">
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <div class="parallax2"></div>
-    <div style="height:750px; text-align:center;background-color: red;font-size:36px">
-        <div class="slide-up">
-            <p>Building a More Sustainable Future</p>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+          </nav>
         </div>
-    </div>
-    
-    <div class="parallax3"></div>
-    <div style="height:750px; text-align:center;background-color: red;font-size:36px">
-        <h1>YUHHHHH</h1>
-    </div>
+        <div class="nav">
+          Navigation
+        </div>
+        <div class="content">
+          <div class="testDiv">Content</div>
+          <h1>Heading</h1>
+          <p>This is my page</p>
+          <a href="#">Go to my design page</a><br>
+          <a href="#">Go to The Web</a><br>
+          <p>Content Goes Here</p>
+        </div>
+      </div>
+      <script src="_js/test.js"></script>
 </body>
-</head>
+
 </html>

@@ -1,0 +1,87 @@
+/* this style will apply to the whole body... */
+/*  */
+
+@media only screen and (min-width: 290px){
+    .upbanner {
+        margin: 0 auto;
+        width: 290px;
+        height: 150px;
+        float: left;
+        color: white;
+        background-color: #3237A5;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 65px;
+        text-align: center;
+    }
+    .nav1 {
+        margin: 0 auto;
+        float: left;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px){
+.colorscheme {
+    color: #474647;
+    color: #DDF9FF;
+}
+body {
+    background-color: #DDF9FF;
+    font-size: 25px;
+}
+li {
+    color:  #474647; 
+    font-size: 15 px;
+}
+a {
+    color: #474647;
+}
+.container {
+    margin: 0 auto;
+    width: 1366px;
+    height: 768;
+    background-color: #3237A5;
+}
+.upbanner {
+    margin: 0 auto;
+    width: 1366px;
+    height: 215px;
+    float: left;
+    color: white;
+    background-color: #3237A5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+    text-align: center;
+}
+.nav{
+    width: 215px;
+    height: 553px;
+    float: left;
+    background-color: #72C5F2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+}
+.content{
+    width: 1121px;
+    height: 523px;
+    background-color: #DDF9FF;
+    float: left;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+}
+.testDiv{
+    width: 200px;
+    height: 200px;
+    background-color: #72C5F2;
+    float: right;
+    padding: 15px;
+    border: #3237A5 10px solid;
+}
+}

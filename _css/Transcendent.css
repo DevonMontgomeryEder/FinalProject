@@ -1,0 +1,60 @@
+@font-face {
+    src: "_fonts/News-Cycle-regular.ttf";
+    font-family: newscycle;
+}
+.colorscheme {
+    color: #474647;
+    color: #FFFCFB;
+}
+body {
+    background-color: #FFFCFB; 
+    font-size: 25px;
+}
+li {
+    color:  #474647; 
+    font-size: 15 px;
+}
+a {
+    color: #474647;
+}
+.container {
+    margin: 0 auto;
+    width: 1366px;
+    height: 768;
+    background-color: #474647;
+}
+.banner {
+    margin: 0 auto;
+    width: 1366px;
+    height: 80px;
+    float: left;
+    color: white;
+    background-color: #474647;
+    font-family: newscycle; 
+    font-style: normal;
+    font-weight:400;
+    font-size: 25px;
+    text-align: left;
+
+}
+.nav{
+    width: 215px;
+    height: 1500px;
+    float: left;
+    background-color: #DDE0E0;
+}
+.content{
+    width: 1121px;
+    height: 1500px;
+    background-color: #FFFCFB;
+    float: left;
+    padding: 15px;
+}
+.testDiv{
+    width: 200px;
+    height: 200px;
+    background-color: #DDE0E0;
+    float: right;
+    padding: 15px;
+    border: #474647 10px solid;
+}
