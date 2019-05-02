@@ -1,0 +1,133 @@
+@media only screen and (min-width: 290px){
+}
+@media only screen and (min-width: 1200px){
+}
+
+body {
+    font-family: Muli, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 33px;
+    color: white;
+}
+    body, html {
+        height: 100%
+        }
+    .parallax1 {
+        /* The image used */
+        background-image: url('https://image.shutterstock.com/image-vector/san-francisco-skyline-vector-260nw-718259761.jpg');
+        /* Full height */
+        height: 100%;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .intro-background{
+        position: center;
+        padding-top: 250px;
+    }
+    .app-download {
+        position: center;
+    }
+    h1 {
+        font-size: 26px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin: 27px 15px 31px 15px;
+        color: #000;
+    }   
+    .parallax2 {
+        /* The image used */
+        background-image: url('https://images.unsplash.com/photo-1532028205213-4c4fa81306d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+        /* Full height */
+        height: 100%;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .animation-slide-up-fade-in {
+        opacity: 1;
+        transform:  translateY(0px);
+        transition: opacity .5s ease-in, transform .5s ease-in;
+    }
+    h2 {
+        font-size: 26px;
+        letter-spacing: 30px;
+        text-transform: uppercase;
+        margin: 27px 15px 31px 15px;
+        color: blue;
+    }
+    .parallax3 {
+        /* The image used */
+        background-image: url('https://images.unsplash.com/photo-1532028205213-4c4fa81306d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+        /* Full height */
+        height: 100%;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    .div.slide-up {
+        height:100px;
+        overflow:hidden;
+    }
+    div.slide-up p {
+        animation: 2s slide-up;
+        margin-top:0%;
+    }
+    
+    @keyframes slide-up {
+        from {
+        margin-top: 100%;
+        height: 300%; 
+        }
+          
+        to {
+        margin-top: 0%;
+        height: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.slide-up {
+  height:100px;
+  overflow:hidden;
+}
+div.slide-up p {
+  animation: 2s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
