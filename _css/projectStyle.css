@@ -8,17 +8,21 @@
         animation: fadeinup;
     }
 
+    /* Defines stle of generic content throughout the body */
+
     body,
     html {
         height: 100%
     }
 
+    /* defines body as maximum what is defined in html */
     header {
         width: 100%;
         height: 100px;
         line-height: 100px; //for header center
     }
 
+    /* Defines header at maximum */
     header nav {
         width: 800px;
         height: 100px;
@@ -27,10 +31,16 @@
         padding-left: 225px;
     }
 
+    /* shifts the nav bar right 225 px while defining its width, height, and alignment */
+
     header nav li {
         list-style: none;
         float: left;
     }
+
+    /* List style = none removes the list style defined in the "user agent stylesheet" or browser's stylesheet
+    Each list item within the header floats closest to the left side of its div */
+
 
     header nav li a {
         text-decoration: none;
@@ -40,39 +50,54 @@
         position: relative;
     }
 
+    /* Removes default text-decoration in "user agent stylesheet", sets initial text color, 
+    the padding between text list items, and duration of transitions if any are applied */
+
     header nav li a:hover {
         color: black;
         text-decoration: underline;
         opacity: 1.0;
     }
 
+    /* When mouse hovers over a navbar list item, this happens: 
+    the text color changes from grey to black, the text becomes underlined,
+    and the text becomes opaque.  All of this takes place over the course of 0.5 seconds as previously defined */
+
     header nav li a:before {
         content: '';
         position: absolute;
     }
 
+    /* Defines the style and positioning before mouse hover effect */
+
     .instalogo {
         opacity: 0.35;
     }
 
+    /* Makes the svg image more transparent to meet the color of the text */
+
     .background-image {
         /* The image used */
         background-image: url(""C:\Users\D.Montgomery-Eder20\OneDrive - Bellarmine College Preparatory\webDesign\myWeb\montgomeryederDevon\_images\logoBackground.png"");
+        /* link to the image implemented */
     }
 
     .parallax1 {
-        /* The image used */
-        background-image: url("https://www-tc.pbs.org/wgbh/nova/media/original_images/nova-wonders-whats-the-universe-made-of-hero_WxVWP1e.jpg");
 
+        background-image: url("C:\Users\D.Montgomery-Eder20\OneDrive - Bellarmine College Preparatory\Documents\Junior Year\Various\Graphic Design Projects\Mountain2.png");
+
+        /* Links to a logo created by me in illustrator that is exported as a PNG */
+        height: 700px;
         /* Set a specific height */
-        height: 750px;
 
-        /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        /* Create the parallax scrolling effect */
     }
+
+    /* Defines parameters for the parallax effect to work */
 
     .overlay {
         position: absolute;
@@ -87,9 +112,16 @@
         transition: .5s ease;
     }
 
+    /* Defines an initially invisible ("hidden") overlay to the image embedded in the parallax effect.
+    Defines the distance of the overlay (120px) moving away from the bottom of the image towards the top.
+    Does not have any horizontal transition.  Sets transition animation to take place over .5 seconds.
+     */
+
     .parallax1:hover .overlay {
         height: 100%;
     }
+
+    /* Height of overlay increases and becomes visible when mouse hovers over image */
 
     .text {
         white-space: nowrap;
@@ -103,6 +135,9 @@
         -ms-transform: translate(-200%, -400%);
     }
 
+    /* Defines text style within the overlay*/
+
+
     .style1 {
         height: 750px;
         float: center;
@@ -111,16 +146,22 @@
         font-size: 36px;
     }
 
+    /* Defines the stle of the div containing "background" */
+
     .intro-background {
         position: center;
         padding-top: 75px;
         padding-bottom: 0px;
     }
 
+    /* Defines the position and padding of the div that contains the "Google Play Store" and "App Store" buttons*/
+
     .app-download {
         position: center;
         float: center;
     }
+
+    /* Center aligns the "Google Play Store" and "App Store" buttons.*/
 
     h1 {
         font-size: 26px;
@@ -130,6 +171,9 @@
         margin-top: 0px;
         color: #000;
     }
+
+    /* Specifically defines qualities of the text in "h1" independent of 
+    those previously assigned to all text in the "body" */
 
     .parallax2 {
         /* The image used */
@@ -144,13 +188,6 @@
         background-size: cover;
     }
 
-    .background2 {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
 
     .parallax3 span {
         color: white;
@@ -187,9 +224,15 @@
         padding-right: 200px;
     }
 
+    /* Provides padding to the left and right sides of the 
+    footer, centering it.  Also uses block style display ("inline-block") so that
+    multiple divs can remain on the same horizontal line in columns.  */
+
     footer div {
         padding: 25px;
     }
+
+    /* Provides div "Row" inside of "footer" with 25 px padding. */
 
     h3 {
         text-align: start;
@@ -199,12 +242,20 @@
         padding-bottom: 0px;
     }
 
+    /* aligns text to the side where its container begiens.
+    Sets font size to 27 px an dprovides a 30px space as a margin at the top. 
+    Also removes padding at bottom. */
+
     .row {
         display: flex;
         justify-content: space-between;
         margin: 0px;
         padding: 0px;
     }
+
+    /* Zero padding alows for rov divs to align at beginning side 
+    (left side) in a vertical line with the text below. Justify-Content allows the divs to 
+    center within the space between the padding on either sides and remain on one line. */
 
     ul.cooltext {
         list-style-type: none;
@@ -215,6 +266,9 @@
         margin-left: 0px;
         padding-left: 0px;
     }
+
+    /* Removes margin and padding of the ("unordered list") container/div, 
+    allowing for the text to not be indented, and thus come into line with "h3" */
 
     footer div li a {
         text-decoration: none;
@@ -228,11 +282,18 @@
         padding-bottom: 100px;
     }
 
+    /* Defines initial style of the list item text.  Sets color to grey, 10px line 
+    height, removes padding and margins, aligns text to the left side of its container,
+    and provides a padding at the bottom of 100px between the end of the text and the bottom of the website page*/
+
     footer div li a:hover {
         color: black;
         text-decoration: underline;
         opacity: 1.0;
     }
+
+    /* When mouse hovers over list items they change color to black, become underlined, and become opaque*/
+}
 }
 
 @media only screen and (min-width: 1100px) {
@@ -245,17 +306,21 @@
         animation: fadeinup;
     }
 
+    /* Defines stle of generic content throughout the body */
+
     body,
     html {
         height: 100%
     }
 
+    /* defines body as maximum what is defined in html */
     header {
         width: 100%;
         height: 100px;
         line-height: 100px; //for header center
     }
 
+    /* Defines header at maximum */
     header nav {
         width: 800px;
         height: 100px;
@@ -264,10 +329,16 @@
         padding-left: 225px;
     }
 
+    /* shifts the nav bar right 225 px while defining its width, height, and alignment */
+
     header nav li {
         list-style: none;
         float: left;
     }
+
+    /* List style = none removes the list style defined in the "user agent stylesheet" or browser's stylesheet
+    Each list item within the header floats closest to the left side of its div */
+
 
     header nav li a {
         text-decoration: none;
@@ -277,39 +348,54 @@
         position: relative;
     }
 
+    /* Removes default text-decoration in "user agent stylesheet", sets initial text color, 
+    the padding between text list items, and duration of transitions if any are applied */
+
     header nav li a:hover {
         color: black;
         text-decoration: underline;
         opacity: 1.0;
     }
 
+    /* When mouse hovers over a navbar list item, this happens: 
+    the text color changes from grey to black, the text becomes underlined,
+    and the text becomes opaque.  All of this takes place over the course of 0.5 seconds as previously defined */
+
     header nav li a:before {
         content: '';
         position: absolute;
     }
 
+    /* Defines the style and positioning before mouse hover effect */
+
     .instalogo {
         opacity: 0.35;
     }
 
+    /* Makes the svg image more transparent to meet the color of the text */
+
     .background-image {
         /* The image used */
         background-image: url(""C:\Users\D.Montgomery-Eder20\OneDrive - Bellarmine College Preparatory\webDesign\myWeb\montgomeryederDevon\_images\logoBackground.png"");
+        /* link to the image implemented */
     }
 
     .parallax1 {
-        /* The image used */
-        background-image: url("https://www-tc.pbs.org/wgbh/nova/media/original_images/nova-wonders-whats-the-universe-made-of-hero_WxVWP1e.jpg");
 
+        background-image: url("C:\Users\D.Montgomery-Eder20\OneDrive - Bellarmine College Preparatory\Documents\Junior Year\Various\Graphic Design Projects\Mountain2.png");
+
+        /* Links to a logo created by me in illustrator that is exported as a PNG */
+        height: 700px;
         /* Set a specific height */
-        height: 750px;
 
-        /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        /* Create the parallax scrolling effect */
     }
+
+    /* Defines parameters for the parallax effect to work */
 
     .overlay {
         position: absolute;
@@ -324,9 +410,16 @@
         transition: .5s ease;
     }
 
+    /* Defines an initially invisible ("hidden") overlay to the image embedded in the parallax effect.
+    Defines the distance of the overlay (120px) moving away from the bottom of the image towards the top.
+    Does not have any horizontal transition.  Sets transition animation to take place over .5 seconds.
+     */
+
     .parallax1:hover .overlay {
         height: 100%;
     }
+
+    /* Height of overlay increases and becomes visible when mouse hovers over image */
 
     .text {
         white-space: nowrap;
@@ -340,6 +433,9 @@
         -ms-transform: translate(-200%, -400%);
     }
 
+    /* Defines text style within the overlay*/
+
+
     .style1 {
         height: 750px;
         float: center;
@@ -348,16 +444,22 @@
         font-size: 36px;
     }
 
+    /* Defines the stle of the div containing "background" */
+
     .intro-background {
         position: center;
         padding-top: 75px;
         padding-bottom: 0px;
     }
 
+    /* Defines the position and padding of the div that contains the "Google Play Store" and "App Store" buttons*/
+
     .app-download {
         position: center;
         float: center;
     }
+
+    /* Center aligns the "Google Play Store" and "App Store" buttons.*/
 
     h1 {
         font-size: 26px;
@@ -367,6 +469,9 @@
         margin-top: 0px;
         color: #000;
     }
+
+    /* Specifically defines qualities of the text in "h1" independent of 
+    those previously assigned to all text in the "body" */
 
     .parallax2 {
         /* The image used */
@@ -381,13 +486,6 @@
         background-size: cover;
     }
 
-    .background2 {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
 
     .parallax3 span {
         color: white;
@@ -424,9 +522,15 @@
         padding-right: 200px;
     }
 
+    /* Provides padding to the left and right sides of the 
+    footer, centering it.  Also uses block style display ("inline-block") so that
+    multiple divs can remain on the same horizontal line in columns.  */
+
     footer div {
         padding: 25px;
     }
+
+    /* Provides div "Row" inside of "footer" with 25 px padding. */
 
     h3 {
         text-align: start;
@@ -436,12 +540,20 @@
         padding-bottom: 0px;
     }
 
+    /* aligns text to the side where its container begiens.
+    Sets font size to 27 px an dprovides a 30px space as a margin at the top. 
+    Also removes padding at bottom. */
+
     .row {
         display: flex;
         justify-content: space-between;
         margin: 0px;
         padding: 0px;
     }
+
+    /* Zero padding alows for rov divs to align at beginning side 
+    (left side) in a vertical line with the text below. Justify-Content allows the divs to 
+    center within the space between the padding on either sides and remain on one line. */
 
     ul.cooltext {
         list-style-type: none;
@@ -452,6 +564,9 @@
         margin-left: 0px;
         padding-left: 0px;
     }
+
+    /* Removes margin and padding of the ("unordered list") container/div, 
+    allowing for the text to not be indented, and thus come into line with "h3" */
 
     footer div li a {
         text-decoration: none;
@@ -465,10 +580,15 @@
         padding-bottom: 100px;
     }
 
+    /* Defines initial style of the list item text.  Sets color to grey, 10px line 
+    height, removes padding and margins, aligns text to the left side of its container,
+    and provides a padding at the bottom of 100px between the end of the text and the bottom of the website page*/
+
     footer div li a:hover {
         color: black;
         text-decoration: underline;
         opacity: 1.0;
     }
 
+    /* When mouse hovers over list items they change color to black, become underlined, and become opaque*/
 }
